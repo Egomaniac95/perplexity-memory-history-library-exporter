@@ -1,0 +1,15 @@
+{
+  "name": "perplexity-exporter-memory-fork",
+  "version": "1.0.0",
+  "description": "Memory-focused Perplexity Library exporter with incremental updates and Markdown chunks.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Egomaniac95/perplexity-exporter-memory-fork.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Egomaniac95/perplexity-exporter-memory-fork/issues"
+  },
+  "homepage": "https://github.com/Egomaniac95/perplexity-exporter-memory-fork#readme",
+  "author": "Egomaniac95",
+  "license": "MIT"
+}

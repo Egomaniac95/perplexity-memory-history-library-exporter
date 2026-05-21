@@ -1,0 +1,102 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.cjs
+
+# Build output / generated TypeScript artifacts
+dist/
+build/
+*.tsbuildinfo
+
+# Playwright / browser state
+# This stores authenticated browser sessions and may contain cookies.
+browser-data/
+browser-data-playwright/
+playwright-report/
+test-results/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+cookies.json
+*.cookie
+*.cookies
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Perplexity exports and memory outputs
+# These files can contain private conversations, URLs, IDs, sources, cookies, or personal data.
+perplexity-export-*/
+perplexity-update-*/
+clean_export/
+exported-data/
+memory_chunks/
+md/
+perplexity-memory.md
+perplexity-export-state.json
+last-thread-id.txt
+threads-index.json
+summary.json
+index.tsv
+failed-or-empty-threads.jsonl
+empty-or-failed-threads.jsonl
+perplexity-threads.json
+perplexity-threads.jsonl
+perplexity-threads.raw.jsonl
+perplexity-clean.json
+perplexity-clean.jsonl
+*.export.json
+*.jsonl
+
+# Keep project documentation tracked
+!README.md
+!CHANGELOG.md
+!LICENSE
+
+# Package manager logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# npm pack output
+*.tgz
+
+# Coverage / test artifacts
+coverage/
+.nyc_output/
+
+# OS files
+.DS_Store
+**/.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE/editor files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Local scratch / temporary notes
+scratch/
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+*.orig
+
+# Optional private planning docs
+.github/prompts/
+private/
+_private/

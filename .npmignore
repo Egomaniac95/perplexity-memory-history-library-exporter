@@ -1,0 +1,55 @@
+# Source files (compiled output in dist/ is what's published)
+src/
+tsconfig.json
+tsup.config.ts
+
+# Development files
+.git/
+.github/
+.gitignore
+.vscode/
+node_modules/
+browser-data/
+browser-data-playwright/
+
+# Config/tooling
+*.test.js
+*.spec.js
+*.test.ts
+*.spec.ts
+.eslintrc*
+eslint.config.js
+.prettierrc*
+.prettierignore
+.editorconfig
+
+# Logs and databases
+*.log
+npm-debug.log*
+pnpm-debug.log*
+*.db
+
+# Exported data
+perplexity-threads-*.json
+exported-data/
+
+# Scripts not needed in package
+capture-requests.js
+analyze-capture.js
+configure-export.js
+export-threads.js
+export-all.js
+extract-cookies.js
+setup-browser.js
+setup-browser-puppeteer.js
+export-all-puppeteer.js
+quick-start.sh
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Documentation drafts
+docs/
+*.draft.md
