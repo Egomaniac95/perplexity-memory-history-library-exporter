@@ -1,16 +1,50 @@
-# Source files (compiled output in dist/ is what's published)
+# Source files and TypeScript config; package should publish built dist/ if npm publishing is used.
 src/
 tsconfig.json
 tsup.config.ts
+*.tsbuildinfo
 
-# Development files
+# VCS / CI / editor
 .git/
 .github/
 .gitignore
+.gitattributes
 .vscode/
+.idea/
+
+# Dependencies and browser state
 node_modules/
 browser-data/
 browser-data-playwright/
+playwright-report/
+test-results/
+storageState*.json
+auth.json
+.auth/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+*.env
+*.local
+*.secret
+*.secrets
+*.token
+*.tokens
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+cookies.json
+*.cookie
+*.cookies
+*credentials*.json
+*credential*.json
+*secret*.json
+*token*.json
 
 # Config/tooling
 *.test.js
@@ -27,13 +61,37 @@ eslint.config.js
 *.log
 npm-debug.log*
 pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 *.db
+*.sqlite
+*.sqlite3
 
-# Exported data
-perplexity-threads-*.json
+# Exported/private data
+perplexity-export-*/
+perplexity-update-*/
+clean_export/
 exported-data/
+memory_chunks/
+md/
+perplexity-memory.md
+perplexity-export-state.json
+last-thread-id.txt
+threads-index.json
+summary.json
+index.tsv
+failed-or-empty-threads.jsonl
+empty-or-failed-threads.jsonl
+perplexity-threads.json
+perplexity-threads.jsonl
+perplexity-threads.raw.jsonl
+perplexity-clean.json
+perplexity-clean.jsonl
+*.export.json
+*.jsonl
+*.har
 
-# Scripts not needed in package
+# Scripts not needed in npm package
 capture-requests.js
 analyze-capture.js
 configure-export.js
@@ -45,11 +103,12 @@ setup-browser-puppeteer.js
 export-all-puppeteer.js
 quick-start.sh
 
-# CI/CD
-.github/
-.gitlab-ci.yml
-.travis.yml
-
-# Documentation drafts
+# Documentation drafts / private notes
 docs/
 *.draft.md
+.github/prompts/
+private/
+_private/
+scratch/
+tmp/
+temp/
